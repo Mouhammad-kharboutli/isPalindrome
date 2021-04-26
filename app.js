@@ -77,10 +77,25 @@ app
 
 //  -----------------------Request targetting a specific word ---------------------------
 app
-  .route("/:customPhrase")
+  .route("/phrases/:customPhrase")
 
   // GET a Specific word
-  .get(function (req, res) {})
+  .get(function (req, res) {
+    Phrase.findOne(
+      { phrase: req.params.customPhrase },
+      function (err, foundPhrase) {
+        if (!err) {
+          if (foundPhrase) {
+            res.send(foundPhrase);
+          } else {
+            res.send("The phrase you are looking for does not exist");
+          }
+        } else {
+          res.send(err);
+        }
+      }
+    );
+  })
 
   // Put a new message
   .put(function (req, res) {})
