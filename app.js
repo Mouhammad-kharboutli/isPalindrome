@@ -6,6 +6,7 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // connect to local DB
+// mongodb://localhost:27017/isPalindromeDB
 mongoose.connect("mongodb://localhost:27017/isPalindromeDB", {
   useUnifiedTopology: true,
   useNewUrlParser: true,
@@ -21,17 +22,18 @@ const phraseSchema = new mongoose.Schema({
 
 const Phrase = mongoose.model("Phrase", phraseSchema);
 
+// one phrase that is Palindrome
 const racecar = new Phrase({
   phrase: "racecar",
   isPalindrome: isPalindrome("racecar"),
 });
-
+// one phrase that is NOT Palindrome
 const drop = new Phrase({
   phrase: "drop",
   isPalindrome: isPalindrome("drop"),
 });
 
-//  -----------------------Request targetting all words ---------------------------
+//  -----------------------Request targetting all words/phrases ---------------------------
 
 app
   .route("/phrases")
