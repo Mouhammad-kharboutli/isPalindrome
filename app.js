@@ -65,7 +65,15 @@ app
   })
 
   // delete all messages
-  .delete(function (req, res) {});
+  .delete(function (req, res) {
+    Phrase.deleteMany(function (err) {
+      if (!err) {
+        res.send("All phrases are deleted successfully");
+      } else {
+        res.send(err);
+      }
+    });
+  });
 
 //  -----------------------Request targetting a specific word ---------------------------
 app
