@@ -63,3 +63,24 @@ if (port == null || port == "") {
 app.listen(port, function () {
   console.log("Server has started successfully");
 });
+
+
+function isPalindrome(str) {
+    if (
+      str.replace(/[\W_]/g, "").toLowerCase() ===
+      str.replace(/[\W_]/g, "").toLowerCase().split("").reverse().join("")
+    ) {
+      return "The entered phrase is Palindrome";
+    } else {
+      return "The entered phrase is NOT Palindrome";
+    }
+  }
+  
+  // -------------------Testing------------------------
+  // ------Palindrome
+  // console.log(isPalindrome("racecar"));
+  // console.log(isPalindrome("Don't nod."));
+  // console.log(isPalindrome("Eva, can I see bees in a cave?"));
+  // ------NOT Palindrome
+  // console.log(isPalindrome("raceccar"));
+  
