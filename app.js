@@ -98,7 +98,22 @@ app
   })
 
   // Put a new message
-  .put(function (req, res) {})
+  .put(function (req, res) {
+    Phrase.replaceOne({phrase:req.params.customPhrase},
+        {phrase:req.body.phrase,isPalindrome: isPalindrome(req.body.phrase)}
+        ,function(err,foundPhrase){
+            if (!err) {
+                if (foundPhrase) {
+                    res.send("Phrase replaced successfully");
+                } else {
+                    res.send("The phrase you are looking for does not exist");
+                }
+            } else {
+                res.send(err);
+            }
+        })
+
+  })
 
   // Patch a new message
   .patch(function (req, res) {})
