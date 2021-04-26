@@ -50,7 +50,19 @@ app
   })
 
   // Post a new message
-  .post(function (req, res) {})
+  .post(function (req, res) {
+    const newPhrase = Phrase({
+      phrase: req.body.phrase,
+      isPalindrome: isPalindrome(req.body.phrase),
+    });
+    newPhrase.save(function (err) {
+      if (!err) {
+        res.send("Phrase added successfully");
+      } else {
+        res.send(err);
+      }
+    });
+  })
 
   // delete all messages
   .delete(function (req, res) {});
