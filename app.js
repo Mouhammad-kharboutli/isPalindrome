@@ -5,33 +5,49 @@ const mongoose = require("mongoose");
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 
+// connect to local DB
 mongoose.connect("mongodb://localhost:27017/isPalindromeDB", {
   useUnifiedTopology: true,
   useNewUrlParser: true,
 });
 
-const wordSchema = new mongoose.Schema({
-  word: {
+const phraseSchema = new mongoose.Schema({
+  phrase: {
     type: String,
     required: [1, "please enter a word"],
   },
   isPalindrome: String,
 });
 
-const Word = mongoose.model("Word", wordSchema);
+const Phrase = mongoose.model("Phrase", phraseSchema);
 
-const racecar = new Word({
-  word: "racecar",
+const racecar = new Phrase({
+  phrase: "racecar",
   isPalindrome: isPalindrome("racecar"),
+});
+
+const drop = new Phrase({
+  phrase: "drop",
+  isPalindrome: isPalindrome("drop"),
 });
 
 //  -----------------------Request targetting all words ---------------------------
 
 app
-  .route("/")
+  .route("/phrases")
 
   // get all messages and sent as JSON file without any front end development
-  .get(function (req, res) {})
+  .get(function (req, res) {
+    Phrase.find(function (err, foundresults) {
+      if (!err) {
+        if (foundresults) {
+          res.send(foundresults);
+        }
+      } else {
+        res.send(err);
+      }
+    });
+  })
 
   // Post a new message
   .post(function (req, res) {})
@@ -64,23 +80,21 @@ app.listen(port, function () {
   console.log("Server has started successfully");
 });
 
-
 function isPalindrome(str) {
-    if (
-      str.replace(/[\W_]/g, "").toLowerCase() ===
-      str.replace(/[\W_]/g, "").toLowerCase().split("").reverse().join("")
-    ) {
-      return "The entered phrase is Palindrome";
-    } else {
-      return "The entered phrase is NOT Palindrome";
-    }
+  if (
+    str.replace(/[\W_]/g, "").toLowerCase() ===
+    str.replace(/[\W_]/g, "").toLowerCase().split("").reverse().join("")
+  ) {
+    return "The phrase is Palindrome";
+  } else {
+    return "The phrase is NOT Palindrome";
   }
-  
-  // -------------------Testing------------------------
-  // ------Palindrome
-  // console.log(isPalindrome("racecar"));
-  // console.log(isPalindrome("Don't nod."));
-  // console.log(isPalindrome("Eva, can I see bees in a cave?"));
-  // ------NOT Palindrome
-  // console.log(isPalindrome("raceccar"));
-  
+}
+
+// -------------------Testing------------------------
+// ------Palindrome
+// console.log(isPalindrome("racecar"));
+// console.log(isPalindrome("Don't nod."));
+// console.log(isPalindrome("Eva, can I see bees in a cave?"));
+// ------NOT Palindrome
+// console.log(isPalindrome("raceccar"));
