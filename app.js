@@ -75,11 +75,11 @@ app
     });
   });
 
-//  -----------------------Request targetting a specific word ---------------------------
+//  -----------------------Request targetting a specific word/phrase ---------------------------
 app
   .route("/phrases/:customPhrase")
 
-  // GET a Specific word
+  // GET a Specific phrase
   .get(function (req, res) {
     Phrase.findOne(
       { phrase: req.params.customPhrase },
@@ -88,7 +88,7 @@ app
           if (foundPhrase) {
             res.send(foundPhrase);
           } else {
-            res.send("The phrase you are looking for does not exist");
+            res.send("No phrases matche that phrase you are trying to find");
           }
         } else {
           res.send(err);
@@ -99,29 +99,56 @@ app
 
   // Put a new message
   .put(function (req, res) {
-    Phrase.replaceOne({phrase:req.params.customPhrase},
-        {phrase:req.body.phrase,isPalindrome: isPalindrome(req.body.phrase)}
-        ,function(err,foundPhrase){
-            if (!err) {
-                if (foundPhrase) {
-                    res.send("Phrase replaced successfully");
-                } else {
-                    res.send("The phrase you are looking for does not exist");
-                }
-            } else {
-                res.send(err);
-            }
-        })
-
+    Phrase.replaceOne(
+      { phrase: req.params.customPhrase },
+      { phrase: req.body.phrase, isPalindrome: isPalindrome(req.body.phrase) },
+      { overwrite: true },
+      function (err, foundPhrase) {
+        if (!err) {
+          if (foundPhrase) {
+            res.send("Phrase put/replaced successfully");
+          } else {
+            res.send("No phrases matche that phrase you are trying to find");
+          }
+        } else {
+          res.send(err);
+        }
+      }
+    );
   })
 
   // Patch a new message
-  .patch(function (req, res) {})
+  .patch(function (req, res) {
+    Phrase.updateOne(
+      { phrase: req.params.customPhrase },
+      { $set: req.body },
+      function (err, foundPhrase) {
+        if (!err) {
+          if (foundPhrase) {
+            res.send("Phrase patched successfully");
+          } else {
+            res.send("No phrases matche that phrase you are trying to find");
+          }
+        } else {
+          res.send(err);
+        }
+      }
+    );
+  })
 
-  // delete all messages
-  .delete(function (req, res) {});
+  // delete a specific messages
+  .delete(function (req, res) {
+    Phrase.deleteOne({ phrase: req.params.customPhrase }, function (err) {
+      if (!err) {
+        res.send("Phrase deleted successfully");
+      } else {
+        res.send(err);
+      }
+    });
+  });
 
-// Port will be chosen dynamically from the server provider
+
+// Port will be chosen dynamically from the server provider or run on localhost, port3000
 let port = process.env.PORT;
 if (port == null || port == "") {
   port = 3000;
@@ -129,6 +156,7 @@ if (port == null || port == "") {
 app.listen(port, function () {
   console.log("Server has started successfully");
 });
+
 
 function isPalindrome(str) {
   if (
