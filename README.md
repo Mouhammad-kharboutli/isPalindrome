@@ -1,6 +1,6 @@
 # isPalindrome
 
-Ispalindrome is a a REST API which determines if an input message/phrase is palindrome or not.
+IsPalindrome is a a REST API which determines if an input message/phrase is palindrome or not.
 
 ## capability
 This API coming with the following capability:
@@ -31,7 +31,7 @@ I have run out of time for this project, put a note that there are tons of ideas
 
 ## Support
 If you face any issue , I lovely go for help.
-just sent an email to [myEmail](eng.mouhammad.kharboutli@gmail.com)
+just sent an email to [myEmail](mailto:eng.mouhammad.kharboutli@gmail.com)
 or drop me a call via Telegram :[Mouhammad kh]
 
 
