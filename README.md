@@ -2,28 +2,33 @@
 
 IsPalindrome is a a public REST API which determines if an input message/phrase is palindrome or not.
 
-## capability
+## Capability
 This API coming with the following capability:
 
-o Submit/post messages
+A. Requsest Targeting all phrases 
 
-o List received messages
+      o Submit/post messages
 
-o Delete all received messages
+      o List received messages
 
+      o Delete all received messages
 
-o Retrieve a specific message and determine if it is a palindrome or not
+B. Requsest Targeting a specific phrase
 
-o Put a specific message
+      o Retrieve a specific message and determine if it is a palindrome or not
 
-o Patch a specific message
+      o Put a specific message
+  
+      o Patch a specific message
 
-o Delete a specific message
+      o Delete a specific message
 
 
 
 ## Usage
-#Navigate to this URL [Application](https://fierce-sea-01154.herokuapp.com/) to check the application.
+#Navigate to this URL [Web application](https://fierce-sea-01154.herokuapp.com/phrases) to check the application.
+
+![alt text](https://github.com/Moooodykh/isPalindrome./blob/main/Readme%20documentation/phrases/delete-phrases.PNG?raw=true)
 
 
 ## Project status
