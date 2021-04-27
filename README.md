@@ -38,10 +38,10 @@ Navigate to this URL [Web application](https://fierce-sea-01154.herokuapp.com/ph
 ![alt text](https://github.com/Moooodykh/isPalindrome./blob/main/Readme%20documentation/phraseschema.PNG?raw=true)
 
 #### the flow diagrams can be found here:
-            o Requsest targeting all phrases
+     o Requsest targeting all phrases
 [Flow diagram all phrases](https://github.com/Moooodykh/isPalindrome./blob/main/Flow%20diagram/phrases.png)
 
-            o Requsest targeting a specific phrase     
+     o Requsest targeting a specific phrase     
 [Flow diagram for specific phrase](https://github.com/Moooodykh/isPalindrome./blob/main/Flow%20diagram/phrases-customPhrase.png)
 
 #### there is a primary small sktich for sequnce diagram (need to be updated when there is enough time)
