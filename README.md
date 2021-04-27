@@ -78,6 +78,12 @@ Navigate to this URL [Web application](https://fierce-sea-01154.herokuapp.com/ph
             o Delete a specific message
 ![alt text](https://github.com/Moooodykh/isPalindrome./blob/main/Readme%20documentation/phrases-custom/delete-phrase-custom.PNG?raw=true)
 
+## Deployment
+I used heroku dev center to deploy my application, for deployment follow the instructions below :
+
+[Getting Started with Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up)
+
+[Deploying Node.js Apps](https://devcenter.heroku.com/articles/deploying-nodejs)
 
 
 ## Project status
