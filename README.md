@@ -34,7 +34,7 @@ I am using a postman application to interact with our API , you can find a detai
 Navigate to this URL [Web application](https://fierce-sea-01154.herokuapp.com/phrases) to check the application and apply the capabilities mentioned above.
 
 
-#### the phrase schema is:
+#### the phrase's schema is:
 ![alt text](https://github.com/Moooodykh/isPalindrome./blob/main/Readme%20documentation/phraseschema.PNG?raw=true)
 
 ####    Important information to be considered regarding each method while u are targeting all phrases.
