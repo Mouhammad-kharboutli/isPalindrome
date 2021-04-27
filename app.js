@@ -7,7 +7,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // connect to local DB
 // mongodb://localhost:27017/isPalindromeDB
-mongoose.connect("mongodb://localhost:27017/isPalindromeDB", {
+mongoose.connect("mongodb+srv://Admin-Mouhammad:Test-123@cluster0.qfeva.mongodb.net/isPalindromeDB?retryWrites=true&w=majority", {
   useUnifiedTopology: true,
   useNewUrlParser: true,
 });
