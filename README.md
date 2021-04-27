@@ -44,12 +44,12 @@ Navigate to this URL [Web application](https://fierce-sea-01154.herokuapp.com/ph
      o Requsest targeting a specific phrase     
 [Flow diagram for specific phrase](https://github.com/Moooodykh/isPalindrome./blob/main/Flow%20diagram/phrases-customPhrase.png)
 
-#### there is a primary small sktich for sequnce diagram (need to be updated when there is enough time)
+#### There is a primary small skitch for sequnce diagram (need to be updated when there is enough time)
 [Sequence diagram ](https://github.com/Moooodykh/isPalindrome./blob/main/Flow%20diagram/Get%20all%20messages.png)
 
 ## Targeting all phrases
-####    Important information to be considered regarding each method while u are targeting all phrases.
-####    check each method's implemntation and it it summerized in the following pictures.
+####    Important information to be considered regarding each method while targeting all phrases.
+####    Check each method's implemntation and it it summerized in the following pictures.
 
             o List received messages
 ![alt text](https://github.com/Moooodykh/isPalindrome./blob/main/Readme%20documentation/phrases/get-phrases.PNG?raw=true)
@@ -63,7 +63,7 @@ Navigate to this URL [Web application](https://fierce-sea-01154.herokuapp.com/ph
 
 
 ## Targeting a specific phrase
-####    Important information to be considered regarding each method while u are targeting a specific phrase.
+####    Important information to be considered regarding each method while targeting a specific phrase.
 ####    check each method's implemntation and it it summerized in the following pictures.
 
             o Retrieve a specific message and determine if it is a palindrome or not
