@@ -12,6 +12,9 @@
   },
   "author": "Mouhammad Kharboutli",
   "license": "ISC",
+  "engines": {
+    "node": "14.16.0"
+  },
   "bugs": {
     "url": "https://github.com/Moooodykh/isPalindrome./issues"
   },
@@ -20,8 +23,6 @@
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "mongoose": "^5.12.5"
-  },
-  "engines": {
-    "node": "14.16.0"
   }
+
 }
