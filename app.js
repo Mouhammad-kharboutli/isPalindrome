@@ -22,6 +22,7 @@ const phraseSchema = new mongoose.Schema({
 
 const Phrase = mongoose.model("Phrase", phraseSchema);
 
+
 // one phrase that is Palindrome
 const racecar = new Phrase({
   phrase: "racecar",
@@ -35,8 +36,7 @@ const drop = new Phrase({
 
 //  -----------------------Request targeting all words/phrases ---------------------------
 
-app
-  .route("/phrases")
+app.route("/phrases")
 
   // get all messages and sent as JSON file without any front end development
   .get(function (req, res) {
@@ -78,8 +78,7 @@ app
   });
 
 //  -----------------------Request targetting a specific word/phrase ---------------------------
-app
-  .route("/phrases/:customPhrase")
+app.route("/phrases/:customPhrase")
 
   // GET a Specific phrase
   .get(function (req, res) {
@@ -138,7 +137,7 @@ app
     );
   })
 
-  // delete a specific messages
+  // Delete a specific messages
   .delete(function (req, res) {
     Phrase.deleteOne({ phrase: req.params.customPhrase }, function (err) {
       if (!err) {
@@ -150,7 +149,7 @@ app
   });
 
 
-// Port will be chosen dynamically from the server provider or run on localhost, port3000
+// Port will be chosen dynamically from the server provider or run on localhost port 3000
 let port = process.env.PORT;
 if (port == null || port == "") {
   port = 3000;
@@ -160,6 +159,7 @@ app.listen(port, function () {
 });
 
 
+// Function to check if the string is Palindrome or not
 function isPalindrome(str) {
   if (
     str.replace(/[\W_]/g, "").toLowerCase() ===
@@ -171,7 +171,7 @@ function isPalindrome(str) {
   }
 }
 
-// -------------------Testing------------------------
+// ------------------- Function Testing------------------------
 // ------Palindrome
 // console.log(isPalindrome("racecar"));
 // console.log(isPalindrome("Don't nod."));
