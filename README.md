@@ -26,7 +26,9 @@ B. Requsest Targeting a specific phrase
 
 
 ## Usage
-#Navigate to this URL [Application](https://fierce-sea-01154.herokuapp.com/) to check the application.
+#Navigate to this URL [Web application](https://fierce-sea-01154.herokuapp.com/phrases) to check the application.
+
+![alt text](https://github.com/Moooodykh/isPalindrome./blob/main/Readme%20documentation/phrases/delete-phrases.PNG?raw=true)
 
 
 ## Project status
