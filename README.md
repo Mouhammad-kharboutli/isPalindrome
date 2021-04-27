@@ -83,6 +83,8 @@ I used heroku dev center to deploy my application, for deployment follow the ins
 
 [Getting Started with Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up)
 
+[Preparing a Codebase for Heroku Deployment](https://devcenter.heroku.com/articles/preparing-a-codebase-for-heroku-deployment)
+
 [Deploying Node.js Apps](https://devcenter.heroku.com/articles/deploying-nodejs)
 
 
