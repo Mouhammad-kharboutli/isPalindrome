@@ -5,7 +5,7 @@ IsPalindrome is a a public REST API which determines if an input message/phrase 
 ## Capability
 This API coming with the following capability:
 
-A. Requsest Targeting all phrases 
+A. Requsest targeting all phrases 
 
       o Submit/post messages
 
@@ -15,7 +15,7 @@ A. Requsest Targeting all phrases
 
 
 
-B. Requsest Targeting a specific phrase
+B. Requsest targeting a specific phrase
 
       o Retrieve a specific message and determine if it is a palindrome or not
 
