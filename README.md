@@ -47,6 +47,7 @@ Navigate to this URL [Web application](https://fierce-sea-01154.herokuapp.com/ph
 #### there is a primary small sktich for sequnce diagram (need to be updated when there is enough time)
 [Sequence diagram ](https://github.com/Moooodykh/isPalindrome./blob/main/Flow%20diagram/Get%20all%20messages.png)
 
+## Targeting all phrases
 ####    Important information to be considered regarding each method while u are targeting all phrases.
 ####    check each method's implemntation and it it summerized in the following pictures.
 
@@ -61,7 +62,7 @@ Navigate to this URL [Web application](https://fierce-sea-01154.herokuapp.com/ph
 
 
 
-
+## Targeting a specific phrase
 ####    Important information to be considered regarding each method while u are targeting a specific phrase.
 ####    check each method's implemntation and it it summerized in the following pictures.
 
