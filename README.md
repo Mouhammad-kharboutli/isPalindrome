@@ -26,13 +26,19 @@ B. Requsest Targeting a specific phrase
       o Delete a specific message
 
 
+## HOW TO
+I am using a postman application to interact with our API , you can find a detailed explanation about this tool [here](https://github.com/Moooodykh/isPalindrome./blob/main/Readme%20documentation/How%20to%20Postman.pdf)
+
 
 ## Usage
 #Navigate to this URL [Web application](https://fierce-sea-01154.herokuapp.com/phrases) to check the application and apply the capabilities mentioned above.
 
 
+#### the phrase schema is:
+![alt text](https://github.com/Moooodykh/isPalindrome./blob/main/Readme%20documentation/phraseschema.PNG?raw=true)
+
 ####    Important information to be considered regarding each method while u are targeting all phrases.
-####    check each method implemntation and it it summerized in the following pictures.
+####    check each method's implemntation and it it summerized in the following pictures.
 
             o List received messages
 ![alt text](https://github.com/Moooodykh/isPalindrome./blob/main/Readme%20documentation/phrases/get-phrases.PNG?raw=true)
@@ -43,6 +49,23 @@ B. Requsest Targeting a specific phrase
             o Delete all received messages
 ![alt text](https://github.com/Moooodykh/isPalindrome./blob/main/Readme%20documentation/phrases/delete-phrases.PNG?raw=true)
 
+
+
+
+####    Important information to be considered regarding each method while u are targeting a specific phrase.
+####    check each method's implemntation and it it summerized in the following pictures.
+
+            o Retrieve a specific message and determine if it is a palindrome or not
+![alt text](https://github.com/Moooodykh/isPalindrome./blob/main/Readme%20documentation/phrases-custom/get-phrase-custom.PNG?raw=true)
+
+            o Put a specific message
+![alt text](https://github.com/Moooodykh/isPalindrome./blob/main/Readme%20documentation/phrases-custom/put-phrase-custom.PNG?raw=true)
+
+            o Patch a specific message
+![alt text](https://github.com/Moooodykh/isPalindrome./blob/main/Readme%20documentation/phrases-custom/patch-phrase-custom.PNG?raw=true)
+
+            o Delete a specific message
+![alt text](https://github.com/Moooodykh/isPalindrome./blob/main/Readme%20documentation/phrases-custom/delete-phrase-custom.PNG?raw=true)
 
 
 
