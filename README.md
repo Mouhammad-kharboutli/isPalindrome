@@ -38,11 +38,9 @@ Navigate to this URL [Web application](https://fierce-sea-01154.herokuapp.com/ph
 ![alt text](https://github.com/Moooodykh/isPalindrome./blob/main/Readme%20documentation/phraseschema.PNG?raw=true)
 
 #### the flow diagrams can be found here:
-            o Requsest targeting all phrases
-            ![alt text](https://github.com/Moooodykh/isPalindrome./blob/main/Flow%20diagram/phrases.png?raw=true)
-            
-            o Requsest targeting a specific phrase
-![alt text](https://github.com/Moooodykh/isPalindrome./blob/main/Readme%20documentation/phrases/get-phrases.PNG?raw=true)            
+            o Requsest targeting all phrases [here](https://github.com/Moooodykh/isPalindrome./blob/main/Flow%20diagram/phrases.png)
+            o Requsest targeting a specific phrase [here](https://github.com/Moooodykh/isPalindrome./blob/main/Flow%20diagram/phrases-customPhrase.png)
+
 
 ####    Important information to be considered regarding each method while u are targeting all phrases.
 ####    check each method's implemntation and it it summerized in the following pictures.
