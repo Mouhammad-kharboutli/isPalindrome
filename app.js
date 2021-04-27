@@ -33,7 +33,7 @@ const drop = new Phrase({
   isPalindrome: isPalindrome("drop"),
 });
 
-//  -----------------------Request targetting all words/phrases ---------------------------
+//  -----------------------Request targeting all words/phrases ---------------------------
 
 app
   .route("/phrases")
