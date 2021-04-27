@@ -23,7 +23,7 @@ o Delete a specific message
 
 
 ## Usage
-#Navigate to this URL [Application](https://choosealicense.com/licenses).
+#Navigate to this URL [Application](https://fierce-sea-01154.herokuapp.com/) to check the application.
 
 
 ## Project status
