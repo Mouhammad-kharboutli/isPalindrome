@@ -13,6 +13,8 @@ A. Requsest Targeting all phrases
 
       o Delete all received messages
 
+
+
 B. Requsest Targeting a specific phrase
 
       o Retrieve a specific message and determine if it is a palindrome or not
@@ -26,9 +28,19 @@ B. Requsest Targeting a specific phrase
 
 
 ## Usage
-#Navigate to this URL [Web application](https://fierce-sea-01154.herokuapp.com/phrases) to check the application.
+#Navigate to this URL [Web application](https://fierce-sea-01154.herokuapp.com/phrases) to check the application and apply the capabilities mentioned above.
 
+
+Important information to be considered regarding each method while u are targeting all phrases.
+check each method implemntation and it it summerized in the following pictures.
+      o List received messages
+![alt text](https://github.com/Moooodykh/isPalindrome./blob/main/Readme%20documentation/phrases/get-phrases.PNG?raw=true)
+      o Submit/post messages
+![alt text](https://github.com/Moooodykh/isPalindrome./blob/main/Readme%20documentation/phrases/post-phrases.PNG?raw=true)
+         o Delete all received messages
 ![alt text](https://github.com/Moooodykh/isPalindrome./blob/main/Readme%20documentation/phrases/delete-phrases.PNG?raw=true)
+
+
 
 
 ## Project status
