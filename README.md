@@ -31,7 +31,7 @@ I am using a postman application to interact with our API , you can find a detai
 
 
 ## Usage
-#Navigate to this URL [Web application](https://fierce-sea-01154.herokuapp.com/phrases) to check the application and apply the capabilities mentioned above.
+Navigate to this URL [Web application](https://fierce-sea-01154.herokuapp.com/phrases) to check the application and apply the capabilities mentioned above.
 
 
 #### the phrase schema is:
