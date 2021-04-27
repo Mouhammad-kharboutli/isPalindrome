@@ -2,23 +2,26 @@
 
 IsPalindrome is a a public REST API which determines if an input message/phrase is palindrome or not.
 
-## capability
+## Capability
 This API coming with the following capability:
 
-o Submit/post messages
+A. Requsest Targeting all phrases 
 
-o List received messages
+      o Submit/post messages
 
-o Delete all received messages
+      o List received messages
 
+      o Delete all received messages
 
-o Retrieve a specific message and determine if it is a palindrome or not
+B. Requsest Targeting a specific phrase
 
-o Put a specific message
+      o Retrieve a specific message and determine if it is a palindrome or not
 
-o Patch a specific message
+      o Put a specific message
+  
+      o Patch a specific message
 
-o Delete a specific message
+      o Delete a specific message
 
 
 
