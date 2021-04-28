@@ -36,6 +36,9 @@ Navigate to this URL [Web application](https://fierce-sea-01154.herokuapp.com/ph
 
 #### the phrase's schema is:
 ![alt text](https://github.com/Moooodykh/isPalindrome./blob/main/Readme%20documentation/phraseschema.PNG?raw=true)
+#### Note: isPalindrome field is a field that we be calculated automatically and showing the result if that phrase is Palindrome or not ("No need to fill it when you dealing with the API")
+
+
 
 #### the flow diagrams can be found here:
      o Requsest targeting all phrases
