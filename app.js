@@ -2,6 +2,14 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 
+// STATUS CODE AS FEEDBACK
+// ID as identifier not PHRASE
+// separera olika funktioner till olika moduler
+// fel hantering 
+
+
+
+
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -89,7 +97,10 @@ app.route("/phrases/:customPhrase")
           if (foundPhrase) {
             res.send(foundPhrase);
           } else {
-            res.send("No phrases matche that phrase you are trying to find");
+            // res.send(foundPhrase);
+            res.status(404).send("No match found");
+
+            // res.send("No phrases matche that phrase you are trying to find");
           }
         } else {
           res.send(err);
